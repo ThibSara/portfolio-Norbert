@@ -1,1 +1,7 @@
-Hello this is the portfolio
+# Hello this is Antonin's Portfolio : 
+
+to run use : 
+```
+npm start
+
+```
