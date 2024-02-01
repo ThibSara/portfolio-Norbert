@@ -1,0 +1,25 @@
+/* Navbar.css */
+
+.navbar {
+    background-color: #2d3250;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 0 60px;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+  
+  .navbar-nav {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-item {
+    cursor: pointer;
+    font-size: 1.3rem;
+  }
+    

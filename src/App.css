@@ -1,8 +1,32 @@
+/* App.css */
+
+.app-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #2d3250;
+  color: #fff;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.center-container {
+  position: relative;
+  width: 35%; /* Adjust the width of the center container as needed */
+  overflow: hidden;
+  margin-top: 20px; /* Adjust the top margin as needed */
+}
+
+
+/*
+
 body {
   margin: 0;
   padding: 0;
-  background-color: #333; /* Dark grey background color */
-  color: #fff; /* Text color */
+  background-color: #2d3250;
+  color: #fff; 
   font-family: 'Arial', sans-serif;
 }
 
@@ -13,14 +37,4 @@ body {
   justify-content: center;
   height: 100vh;
 }
-
-.three-container {
-  margin-top: 20px;
-  background-color: #444; /* Darker grey background color for Three.js container */
-}
-
-.content-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+*/
