@@ -2,8 +2,11 @@ import React, { useRef } from 'react';
 import { Canvas, useFrame , useLoader} from 'react-three-fiber';
 import {OrbitControls} from "@react-three/drei";
 import { TextureLoader } from 'three/src/loaders/TextureLoader'
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader';
 
-export function ThreeCube() {
+const gltfModel = require('./gyroid.glb');
+
+export function ThreeModel() {
 
   return (
     <div style={{ width: '100%', height: '350px' }}>
@@ -18,6 +21,7 @@ export function ThreeCube() {
 }
 
 function Cube() {
+ const gltf = useLoader(GLTFLoader, gltfModel);
   const mesh = useRef();
 
   useFrame((state,delta) => {
@@ -26,13 +30,9 @@ function Cube() {
 
   })
 
-
-
   return (
-    <mesh ref={mesh}>
-      <boxGeometry args = {[2, 2, 2]} />
-      <meshNormalMaterial color= {"orange"}/>
+    <mesh ref={mesh} scale={[0.5, 0.5, 0.5]}>
+      <primitive object={gltf.scene} />
     </mesh>
   )
 }
-
